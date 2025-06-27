@@ -4,6 +4,13 @@ import logo from '../../assets/logo.png'
 import arrow_icon from '../../assets/arrow_icon.png'
 import { CoinContext } from '../../context/CoinContext'
 
+import { Link } from 'react-router-dom' // here we use link so that when \
+// we are on some page and by clicking on the logo or the 
+// Home option we will get redirected to the home page 
+
+
+
+
 const Navbar = () => {
 
   const {setCurrency} = useContext(CoinContext)
@@ -33,11 +40,18 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-        <img src= {logo} alt="logo" className='logo' />
+        
+        <Link to={'/'}>
+          <img src= {logo} alt="logo" className='logo' />
+        </Link>
+
+
 
         <ul>
             {/* Menu links */}
-            <li>Home</li>
+            <Link to={'/'}>
+              <li>Home</li>
+            </Link>
             <li>Features</li>
             <li>Pricing</li>
             <li>Blog</li>
