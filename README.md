@@ -43,4 +43,11 @@ navbar work // when change the dropdown to diff currency , data must change
 
 
 
-// Media queries in the Navbar.css
+// Media queries in the Navbar.css , Home.css
+
+
+// Search functionality
+
+
+// charts display (Home.jsx)
+// import Link and use Link so that when user clicks on the item it will take the user to the respective coin page
