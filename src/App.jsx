@@ -15,7 +15,8 @@ const App = () => {
       {/* Adding Route and Routes for Home and Coin Page */}
       <Routes>
         <Route path='/' element = {<Home/>}></Route>
-        <Route path='/coin/:coinId' element = {<Coin/>}></Route>
+        <Route path='/coin/:coinId' element = {<Coin/>}></Route> 
+        {/* the coinId will be used in the rendering of the individual coin page */}
       </Routes>
 
 
